@@ -10,7 +10,7 @@ return function (App $app) {
     $app->get('/', 'SeeAllToDoController' );
 
     $app->get('/toDo', 'InputToDoController');
-    $app->post('/toDo', 'InputToDoController');
+    $app->post('/toDo', 'AddToDoController');
 
 //    $app->get('/', function (Request $request, Response $response, array $args) use ($container) {
 //        // Sample log message

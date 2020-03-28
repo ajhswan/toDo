@@ -18,4 +18,13 @@ class ToDoModel
         return $query->fetchAll();
 
     }
+
+    public function insertToDo(string $name, string $info, string $type): bool {
+    $sqlInsert = $this->dbConnection->prepare("INSERT INTO toDoes (name, info, type)
+              VALUES (:name, :info, :type)");
+    $sqlInsert->bindParam(':name', $name);
+    $sqlInsert->bindParam(':info', $info);
+    $sqlInsert->bindParam(':type', $type);
+    return $result = $sqlInsert->execute();
+    }
 }
