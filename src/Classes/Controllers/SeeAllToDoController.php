@@ -20,6 +20,5 @@ class SeeAllToDoController
     {
         $args['toDo'] = $this-> toDoModel->fetchAllToDoes();
         return $this->renderer->render($response, 'index.phtml', $args);
-        var_dump($args['toDo']);
     }
 }

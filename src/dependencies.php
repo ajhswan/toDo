@@ -20,5 +20,6 @@ return function (App $app) {
 
     $container['SeeAllToDoController'] = new \ToDo\Factories\SeeAllToDoControllerFactory();
     $container['ToDoModel'] = new \ToDo\Factories\ToDoModelFactory();
-
+    $container['InputToDoController'] = new \ToDo\Factories\InputToDoControllerFactory();
+    $container['AddToDoController'] = new \ToDo\Factories\AddToDoControllerFactory();
 };
