@@ -9,6 +9,9 @@ return function (App $app) {
 
     $app->get('/', 'SeeAllToDoController' );
 
+    $app->get('/toDo', 'InputToDoController');
+    $app->post('/toDo', 'InputToDoController');
+
 //    $app->get('/', function (Request $request, Response $response, array $args) use ($container) {
 //        // Sample log message
 //        $container->get('logger')->info("Slim-Skeleton '/' route");

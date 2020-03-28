@@ -1,0 +1,36 @@
+<?php
+
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>toDo App</title>
+    <link href='//fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css' />
+    <link rel='stylesheet' type='text/css' href='./css/toDo.css' />
+</head>
+<body>
+<h1>Slim Todo App</h1>
+<div>Add item to ToDo List</div>
+<div class='form-control'>
+    <form method='post' action='/toDo'>
+        <label for='name'>ToDo Name:</label>
+        <input type='text' name='name' max='15' placeholder='Trash' required>
+        <label for='info'>ToDo Description:</label>
+        <input type='text' name='info' max='20' placeholder='Take out trash' required>
+        <label for='type'>ToDo Type:</label>
+        <select type='text' name='type' max='20' placeholder='Urgent' required>
+            <option value='urgent'>Urgent</option>
+            <option value='important'>Important</option>
+            <option value='urgent+important'>Urgent & Important</option>
+            <option value='none' selected='selected'>None</option>
+        </select>
+        <input class='submit' type='submit' name='Add ToDo'>
+    </form>
+
+</div>
+
+
+</body>
+</html>
